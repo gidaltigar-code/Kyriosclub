@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Club Kyrios - La Estrella</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-size: 26px;
+            margin: 0;
+            font-family: Georgia, serif;
+        }
+
+        /* BANNER */
+        .banner {
+            background-image: url("foto2.png");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 55px;
+
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black;
+        }
+
+        /* MENU */
+        .menu {
+            background-color: darkblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 26px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            color: lightblue;
+        }
+
+        /* CONTENIDO */
+        .contenido {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* TODAS LAS SECCIONES ESTÁN OCULTAS */
+        .seccion {
+            display: none;
+        }
+
+        /* SOLO ESTA SE VE */
+        .activa {
+            display: block;
+        }
+
+        img {
+            width: 350px;
+            margin-top: 20px;
+        }
+
+        iframe {
+            margin-top: 20px;
+        }
+
+.ig-card {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.seccion {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.seccion {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+}
+
+
+.btn-modern {
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-social {
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn-social:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* WhatsApp */
+.whatsapp {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+}
+
+/* Instagram */
+.btn-modern:not(.btn-facebook) {
+    background: linear-gradient(135deg, #E1306C, #C13584, #F77737);
+}
+
+/* Facebook */
+.btn-facebook {
+    background: linear-gradient(135deg, #1877F2, #0d5bd7);
+}
+
+.btn-modern:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}    </style>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <h1>Club Kyrios-La Estrella</h1>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+        <button onclick="mostrarSeccion('info')">Información</button>
+        <button onclick="mostrarSeccion('miembros')">Miembros</button>
+        <button onclick="mostrarSeccion('ubicacion')">Dirección</button>
+        <button onclick="mostrarSeccion('contacto')">Contactos</button>
+        <button onclick="mostrarSeccion('actividades')">Actividades</button>
+        <button onclick="mostrarSeccion('instagram')">Instagram</button>
+        <button onclick="mostrarSeccion('facebook')">Facebook</button>
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="contenido">
+
+        <!-- INFORMACIÓN -->
+        <div class="seccion activa" id="info">
+
+    <h2>Bienvenidos al Club Kyrios</h2>
+
+
+  <img src="foto.png"
+     alt="Logos del Club Kyrios"
+     style="width:300px; display:block; margin:20px auto;">
+
+    <h3>Historia del Club</h3>
+
+    <p>
+        La Iglesia Adventista de La Estrella siempre ha sido activa en el
+        movimiento juvenil. A lo largo de los años ha participado como apoyo
+        a otros clubes, como parte de escuela distrital y también como club
+        independiente.
+    </p>
+
+    <p>
+        Algunos de los nombres utilizados anteriormente fueron <strong>Alfa y Omega</strong>, <strong>Shaddai</strong>, 
+        <strong>Deneb</strong> y <strong>Pioneros</strong>. Todos dirigidos por Natalia González exceptuando <strong>Deneb</strong> que fue un club de aventureros dirigido por Gidalti Santamaría. Durante los años de la
+        pandemia por COVID-19 las actividades del club se detuvieron, pero Dios
+        utilizó a la hermana Dayana Cabrera y al Pastor Ismael López para
+        impulsar nuevamente el ministerio juvenil y reorganizar el club.
+    </p>
+
+
+<img src="logos_antiguos.png"
+         alt="Miembros del Club Kyrios"
+         style="width:30%; max-width:1200px; border-radius:15px;">
+
+
+    <p>
+        En el año 2020 se formó una nueva directiva integrada por Natalia
+        González como directora principal, Gidalti Santamaría como directora
+        de Conquistadores y Dayana Cabrera como directora de Aventureros.
+        Fue entonces cuando se adoptó el nombre <strong>Kyrios</strong>,
+        que significa <em>"Mi Dios y Señor"</em>.
+    </p>
+
+
+    <p>
+        Desde entonces el club ha continuado creciendo y desarrollando
+        actividades para fortalecer la vida espiritual, física y social
+        de niños y jóvenes.
+    </p>
+
+
+<img src="logo_actual.png"
+         alt="Miembros del Club Kyrios"
+         style="width:30%; max-width:1200px; border-radius:15px;">
+
+
+
+    <h3>Misión</h3>
+
+    <p>
+        Nuestra principal razón de existir es preservar a nuestros chicos
+        en los pasos del Señor, predicar el evangelio a otros y prepararnos
+        para la eternidad con Cristo Jesús.
+    </p>
+
+    <h3>Fundación</h3>
+
+    <p>2020</p>
+
+    <h3>Iglesia a la que pertenece</h3>
+
+    <p>Iglesia Adventista de La Estrella</p>
+
+</div>
+
+        <!-- MIEMBROS -->
+        <div class="seccion" id="miembros">
+    <h2>Miembros del Club Kyrios</h2>
+
+    <p>
+        Aventureros, Conquistadores, Guías Mayores y líderes
+        del Club Kyrios - La Estrella.
+    </p>
+
+    <img src="miembros.jpg"
+         alt="Miembros del Club Kyrios"
+         style="width:90%; max-width:1200px; border-radius:15px;">
+</div>
+
+        <!-- UBICACION -->
+        <div class="seccion" id="ubicacion">
+
+    <h2>Dirección</h2>
+
+    <img src="iglesia.webp"
+         alt="Miembros del Club Kyrios"
+         style="width:30%; max-width:1200px; border-radius:15px;">
+
+
+    <p>
+        G89J+3R7, C. Oscura,<br>
+        La Estrella, Provincia de Chiriquí, Panamá
+    </p>
+
+    <a href="https://maps.app.goo.gl/jn9PgFt3NyU5LG316"
+       target="_blank">
+
+        <button style="
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;">
+            📍 Ver ubicación en Google Maps
+        </button>
+
+    </a>
+
+</div>
+
+
+        <!-- CONTACTOS -->
+        <!-- CONTACTOS -->
+<div class="seccion" id="contacto">
+
+    <h2>Contacto</h2>
+
+    <p>📞 +507 6002-2066 Directora</p>
+
+    <a href="https://wa.me/50760022066?text=Hola%20quisiera%20información%20del%20Club%20Kyrios"
+   target="_blank"
+   class="btn-social whatsapp">
+
+     WhatsApp
+</a>
+
+    <img src="directoras.jpg"
+         alt="Miembros del Club Kyrios"
+         style="width:90%; max-width:1200px; border-radius:15px;">
+
+</div>
+
+        <!-- ACTIVIDADES -->
+        <div class="seccion" id="actividades">
+
+    <h2>Actividades</h2>
+
+    <h3> Caminatas y Marchas</h3>
+
+
+<!-- FOTO PRINCIPAL -->
+<div>
+    <img src="caminatas.jpg"
+         alt="Caminatas"
+         style="
+         width:60%;
+         max-width:500px;
+         border-radius:15px;
+         margin:15px;">
+</div>
+
+<!-- DOS FOTOS RECTANGULARES -->
+<div class="galeria">
+
+    <img src="marcha.jpg"
+         alt="Marcha">
+
+    <img src="caminata2.jpg"
+         alt="caminata 2">
+
+</div>
+
+<p>
+    Nuestras caminatas y marchas promueven la salud, la disciplina,
+    el compañerismo y el contacto con la naturaleza.
+</p>
+
+<video width="700" controls>
+    <source src="marchacamp.mp4" type="video/mp4">
+</video>
+    <h3> Campamentos</h3>
+
+<div class="galeria">
+
+    <img src="campamento.jpg"
+         alt="Campamento 1">
+
+    <img src="campamento2.jpg"
+         alt="Campamento 2">
+
+    <img src="campamento3.jpg"
+         alt="Campamento 3">
+
+    <img src="campamento4.jpg"
+         alt="Campamento 4">
+
+ <img src="campamento5.jpg"
+         alt="Campamento 5">
+
+ <img src="campamento6.jpg"
+         alt="Campamento 6">
+
+</div>
+
+<p>
+    Los campamentos brindan oportunidades de crecimiento espiritual,
+    aprendizaje, amistad y aventura.
+</p>
+
+<video width="700" controls>
+    <source src="campamentosaludo.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+</video>
+
+    <h3> Competencias</h3>
+
+    <video width="500" controls>
+        <source src="competencias.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+
+    <br><br>
+
+    <video width="500" controls>
+        <source src="competencia1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
+
+</div>
+
+        <!-- INSTAGRAM -->
+        <div class="seccion" id="instagram">
+
+    <h2>Instagram</h2>
+
+    <p>
+        Síguenos para conocer nuestras actividades, campamentos,
+        investiduras y proyectos especiales.
+    </p>
+
+    <img src="instagram.jpg"
+         alt="Miembros del Club Kyrios"
+         style="width:90%; max-width:1200px; border-radius:15px;">
+
+    <div class="botones">
+        <a href="https://www.instagram.com/kyriosclub/" target="_blank">
+            <button class="btn-modern">
+                Visitar Instagram
+            </button>
+        </a>
+    </div>
+
+</div>
+
+        <!-- FACEBOOK -->
+        <div class="seccion" id="facebook">
+
+    <h2>Facebook</h2>
+
+    <p>
+        Conoce más sobre nuestro club y mantente informado de nuestras actividades.
+    </p>
+
+    <img src="facebook.jpg"
+         alt="Miembros del Club Kyrios"
+         style="width:90%; max-width:1200px; border-radius:15px;">
+
+    <div class="botones">
+        <a href="https://www.facebook.com/share/14bTztjEohL/" target="_blank">
+    <button class="btn-modern btn-facebook">
+        Visitar Facebook
+    </button>
+</a>
+    </div>
+
+</div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        function mostrarSeccion(id) {
+
+            let secciones = document.querySelectorAll('.seccion');
+
+            secciones.forEach(function (seccion) {
+                seccion.classList.remove('activa');
+            });
+
+            document.getElementById(id).classList.add('activa');
+        }
+    </script>
+
+</body>
+
+</html>
